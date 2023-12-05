@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF=8">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="midasi">
+<h1>プログラム復習コンテンツ</h1>
+<a href="https://o-saringu.github.io/mokuji/">
+<div class="home"></div>
+</a>
+</div>
+
+<div class="oomidasi"><p>random()関数</div>
+
+<div class="yoko">
+	<div class="yoko1">
+	<div class="komidasi1"><p>サンプルコードの結果</p></div>
+	<img src = "8-6.png">
+	</div>
+	<div class="yoko1">
+	<div class="komidasi2"><p>サンプルコード</div>
+	<div class="code">
+		<p>　　	float speed=2.5;
+		<p>　　	int diameter=20;  
+		<p>　　	float x;
+		<p>　　	float y;
+		<p>　　	　
+		<p>　　	void setup()
+		<p>　　	　size(240, 120);
+		<p>　　	　x=width/2;
+		<p>　　	　y=height/2;
+		<p>　　	} 
+		<p>　　	　
+		<p>　　	void draw(){
+		<p>　　	　x+=random(-speed, speed);
+		<p>　　	　y+=random(-speed, speed);  
+		<p>　　	　ellipse(x, y, diameter, diameter);
+		<p>　　	}
+	</div>
+	</div>
+</div>
+
+
+<div class="komidasi3"><p>説明文</div>
+<div class="ep">
+	<p>　random()関数は設定した値の範囲内の乱数を作り出す関数。
+	<p>　random(a, b);
+	<p>　a:値の下限　（任意）
+	<p>　b:値の上限　（必須）
+	<p>　
+	<p>　このプログラムは、円がrandom関数によって返された値によって±2.5ずつ移動していくプログラムである。
+	<p>　background()関数を使用していないため画面がリフレッシュされないため、円の軌道が残り続ける。
+</div>
+
+</body>
+
+
